@@ -1,6 +1,8 @@
 package com.kujin.selection;
 
-public class SelectionSort {
+import com.kujin.Sort;
+
+public class SelectionSort extends Sort {
 
     int[] list;
     int size;
@@ -12,7 +14,8 @@ public class SelectionSort {
         this.size = size;
     }
 
-    void Sort(int[] list, int size) {
+
+    public void sort(int[] list, int size) {
         new SelectionSort(list, size);
         int k, tmp;
 
@@ -28,9 +31,10 @@ public class SelectionSort {
         }
     }
 
-    void printAll(int[] list, int size) {
+    public void printAll(int[] list, int size) {
         for(int i =0; i < size; i++)
             System.out.print(" " + list[i]);
     }
+
 
 }

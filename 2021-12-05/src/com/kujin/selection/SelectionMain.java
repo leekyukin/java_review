@@ -10,7 +10,7 @@ public class SelectionMain {
         for(int i = 0; i < list.length; i++)
             System.out.print(" " + list[i]);
 
-        SS.Sort(list, 8);
+        SS.sort(list, 8);
 
         System.out.println();
         System.out.println("정렬후 ----------------");
