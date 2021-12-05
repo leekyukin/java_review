@@ -1,0 +1,14 @@
+package com.kujin;
+
+public class Swap {
+
+
+
+
+    void SwapXtoY(int x, int y, int tmp) {
+        tmp = x;
+        x = y ;
+        y = tmp;
+    }
+
+}
