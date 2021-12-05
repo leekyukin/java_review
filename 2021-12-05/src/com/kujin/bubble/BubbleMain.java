@@ -1,6 +1,6 @@
-package com.kujin;
+package com.kujin.bubble;
 
-public class Main {
+public class BubbleMain {
 
     public static void main(String[] args) {
 

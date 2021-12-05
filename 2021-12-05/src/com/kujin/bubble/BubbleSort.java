@@ -1,8 +1,6 @@
-package com.kujin;
+package com.kujin.bubble;
 
-import java.util.ArrayList;
-
-public class BubbleSort extends Swap{
+public class BubbleSort {
 
     int[] list;
 
