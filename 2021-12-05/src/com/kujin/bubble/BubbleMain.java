@@ -12,11 +12,16 @@ public class BubbleMain {
         System.out.println("정렬전--------------------------");
         for(int i = 0; i < 10; i++)
             System.out.print(" " + list[i]);
-        BS.sort( 10);
+        BS.sort(list, 10);
 
         System.out.println();
         System.out.println("정렬후 --------------------------");
+        BS.printAll(list, 10);
+        System.out.println();
 
-        BS.printList();
+        BS.sortWithOutSwap(list, 10);
+
+
+        BS. printAll(list, 10);
     }
 }

@@ -1,8 +1,7 @@
 package com.kujin.quick;
 
-import com.sun.xml.internal.bind.v2.model.annotation.Quick;
 
-public class InsertionMain {
+public class QuickMain {
     public static void main(String[] args) {
 
         int[] list = new int[] {2,6,4,5,2,3,4,2,1,3};
