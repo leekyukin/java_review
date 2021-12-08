@@ -8,12 +8,7 @@ public class MergeMain  {
         MergeSort MS = new MergeSort();
 
         int[] list = new int[] {1,9,2,7,8,3,7,5};
-
-        System.out.println("정렬전-------------------");
-        MS.printAll(list, 8);
-
-        System.out.println("정렬후--------------------");
-        MS.sort(list, 8);
+        MS.sort(list, 0, 7);
         MS.printAll(list, 8);
     }
 }

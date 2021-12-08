@@ -5,7 +5,7 @@ import com.kujin.Sort;
 public class MergeSort extends Sort {
 
 
-    public void merge (int[] list, int left, int mid, int right) {
+    public int[] merge (int[] list, int left, int mid, int right) {
         int[] sorted = new int[100];
         int i, j, k, l;
         i = left;
@@ -25,6 +25,7 @@ public class MergeSort extends Sort {
             for (l = left; l <= right; l++)
                 list[l] = sorted[l];
         }
+        return list;
     }
 
 
