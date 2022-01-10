@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e86c22ae-d6f6-4d07-bffa-4a113d2557c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/java_review.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-12-05/src/com/kujin/bubble/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-12-05/src/com/kujin/bubble/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2021-12-05/src/com/kujin/quick/InsertionMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/2021-12-05/src/com/kujin/quick/QuickMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="e86c22ae-d6f6-4d07-bffa-4a113d2557c6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +94,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/2021-12-05" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -140,6 +133,7 @@
       <workItem from="1638620756265" duration="3113000" />
       <workItem from="1638686761289" duration="592000" />
       <workItem from="1638848984964" duration="943000" />
+      <workItem from="1641802340355" duration="52000" />
     </task>
     <servers />
   </component>
