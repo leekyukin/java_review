@@ -1,4 +1,4 @@
-package com.kujin;
+package com.kujin.list;
 
 
 
