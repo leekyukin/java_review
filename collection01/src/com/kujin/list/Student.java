@@ -50,8 +50,8 @@ public class Student {
         else this.grade = 'E';
     }
 
-    public void outputStuInf() {
-        System.out.printf("%4s  %3s  %3d  %3d  %3d  %3d  %3.2f  %3s\n",
+    public void outputStuInfo() {
+        System.out.printf("%4s   %3s   %3d    %3d    %3d   %3d    %3.2f  %s\n",
                 this.stuId, this.name, this.kor, this.eng, this.math,
                 this.tot, this.avg, this.grade);
     }
