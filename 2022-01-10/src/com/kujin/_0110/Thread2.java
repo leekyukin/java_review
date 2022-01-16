@@ -1,4 +1,4 @@
-package com.kujin;
+package com.kujin._0110;
 
 public class Thread2 implements Runnable {
     @Override

@@ -1,4 +1,4 @@
-package com.kujin;
+package com.kujin._0110;
 
 public class ThreadMain {
     public static void main(String[] args) {
