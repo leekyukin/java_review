@@ -1,6 +1,6 @@
 package static_filed;
 
-public class StaticMain {
+public class FiledMain {
     public static void main(String[] args) {
 
         Count c1 = new Count();
