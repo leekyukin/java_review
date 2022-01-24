@@ -7,7 +7,7 @@ public class FiledMain {
 
 //        lee.nation = "미국";  ->  final 변수
 //        lee.name = "리무진";   ->  final 변수
-        
+
         lee.age = 18;
         lee.age = 35;
     }
