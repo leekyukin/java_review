@@ -1,10 +1,10 @@
-# static 
+# <div style="color:plum">tatic</div> 
 
 
-## 정적 맴버변수 (Static Member Variable) 
+## <span style="color:orange">정적 맴버변수 (Static Member Variable) </span>
 
-- 새로운 객체를 생성하면 전에 만들었던 객체에 저장되어 있던 값이 그대로 저장되어 생성된다.
-- 기본적으로는 Heap역역에 클레스들이 생성되지만 static 맴버변수는 Data역역에 따로 생성되어 모든 클레스에서 공유한다.
+- <span style="color:wheat">새로운 객체를 생성하면 전에 만들었던 객체에 저장되어 있던 값이 그대로 저장되어 생성된다.</span>
+- <span style="color:wheat">기본적으로는 Heap역역에 클레스들이 생성되지만 static 맴버변수는 Data역역에 따로 생성되어 모든 클레스에서 공유한다.</span>
 
 
 ```java
@@ -37,7 +37,7 @@ public class main {
     }
 }
 ```
-### 모두 같은 Data영역에 있는 C1의 변수 b를 **공유**한다.
+### <span style="color:wheat"> 모두 같은 Data영역에 있는 C1의 변수 b를 **공유**한다.</span>
 ---
 
 ```java
@@ -52,14 +52,14 @@ public class main {
     }
 }
 ```
-### static 맴버변수는 객체와 무관하기 때문에 클레스 이름만으로 참조하여 사용한다.
+### <span style="color:wheat">static 맴버변수는 객체와 무관하기 때문에 클레스 이름만으로 참조하여 사용한다.</span>
 
 --- 
 
-## 정적 메서드 (Static Method)
+## <span style="color:orange">정적 메서드 (Static Method)</span>
 
-- static 메서드 내부에서는 static이 붙은 변수나 메서드만 참조할 수 있다.
-- static 메서드 내부에 non-static 메서드를 참조하려면 객체 생성을 통해서 참조해야한다.
+- <span style="color:wheat">static 메서드 내부에서는 static이 붙은 변수나 메서드만 참조할 수 있다.</span>
+- <span style="color:wheat">static 메서드 내부에 non-static 메서드를 참조하려면 객체 생성을 통해서 참조해야한다.</span>
 
 ```java
 
@@ -88,14 +88,14 @@ public class Count {
 }
 ```
 
-- 정적 메서드는 객체 생성없이 이름만으로 직접 참조가 가능하다.
+- <span style="color: wheat">정적 메서드는 객체 생성없이 이름만으로 직접 참조가 가능하다.</span>
 
 ```java
 
 public class Main {
     public static void main(String[] args) {
 
-                                        //    출력값  
+                                            // 출력값  
         System.out.println(Count.method2()); // 10
         Count.b += 50;
         System.out.println(Count.method2()); // 60
@@ -110,3 +110,56 @@ public class Main {
 }
 
 ```
+
+---
+
+## <span style="color: orange">정적 변수 초기화 (Static Variable Initializer)</span>
+
+-  정적 변수 초기화를 위해서는 정적 초기화자를 사용해야한다.
+-  non-static 변수는 참조할 수 없다.
+
+### <span style="color:orange">Class</span>
+``` java
+
+public class Computer {
+
+    public static String company = "Apple";
+    public static String model = "M1 MacBook Pro";
+    public static String info;
+    public int price;
+
+    public Computer() {
+        System.out.println("생성자가 호출됨");
+        this.price = 2650000;
+        this.info = company + "-" +  model;
+    }
+
+    static {
+            System.out.println("정적 초기화자가 호출됨");
+            info = company  + "-" + model;
+        //  price = 10000000;   (X)
+    }
+}
+```
+
+### <span style="color: orange"> Main </span>
+```java
+public class InitMain {
+    public static void main(String[] args) {
+        
+        Computer com = new Computer();
+                                     // 출력값
+        System.out.println(com.info);//  null 
+        // ㄴ> 생성자가 호출되지 않았기때문에 info 의 값이 비어있음
+        // So, 정적 초기화자를 사용해야한다.
+
+//    정적 초기화자를 호출하려면 클레스를 로딩해야 한다. // 출력값        
+        System.out.println(Computer.info);  // Apple-M1 MacBook Pro
+    }
+}
+```
+
+### <span style="color:wheat"> 클레스 로딩 방법</span>
+1. 객체를 생성
+2. 클레스 이름을 통해 정적 맴버에 접근
+
