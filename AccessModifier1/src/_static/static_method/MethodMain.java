@@ -1,4 +1,4 @@
-package static_method;
+package _static.static_method;
 
 public class MethodMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package static_init;
+package _static.static_init;
 
 public class Computer {
 

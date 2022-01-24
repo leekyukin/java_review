@@ -1,4 +1,4 @@
-package static_filed;
+package _static.static_filed;
 
 public class Count {
 

@@ -5,7 +5,8 @@
 
 - <span style="color:wheat">새로운 객체를 생성하면 전에 만들었던 객체에 저장되어 있던 값이 그대로 저장되어 생성된다.</span>
 - <span style="color:wheat">기본적으로는 Heap역역에 클레스들이 생성되지만 static 맴버변수는 Data역역에 따로 생성되어 모든 클레스에서 공유한다.</span>
-
+- <span style="color:wheat">정적 초기화는 클레스가 로딩될 때 생성자와 main() 메서드에 앞서 최초 일회만 실행된다. </span>
+- <span style="color:wheat">application 실행 중 반드시 한번만 실행되어야 할 로직이 있다면 기술하여 사용될 수 있다.
 
 ```java
 
